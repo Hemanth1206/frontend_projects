@@ -310,8 +310,8 @@
         // Function to display the selected section and hide others
         function showSection(sectionId, element) {
             // Hide all sections
-            var sections = document.getElementsByClassName('section');
-            for (var i = 0; i < sections.length; i++) {
+            let sections = document.getElementsByClassName('section');
+            for (let i = 0; i < sections.length; i++) {
                 sections[i].style.display = 'none';
             }
 
@@ -319,7 +319,7 @@
             document.getElementById(sectionId).style.display = 'block';
 
             // Remove the 'active' class from all links
-            var links = document.querySelectorAll('.nav-links a');
+            let links = document.querySelectorAll('.nav-links a');
             links.forEach(link => link.classList.remove('active'));
 
             // Add the 'active' class to the clicked link
